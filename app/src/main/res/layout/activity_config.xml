@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bacillo.fab.ConfigActivity"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fab_size_normal"
+        android:background="@color/toolbar"
+        android:titleTextColor="@color/mainText">
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style="@style/MainText"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/image_change_interval"
+            android:id="@+id/textView"
+
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            style="@style/MainText"
+            android:id="@+id/text_interval"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#dd000000"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+
+    <SeekBar
+        android:max="59"
+        android:progress="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp" />
+
+    <View style="@style/Divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:onClick="onClickChooseFolder"
+        android:clickable="true">
+
+        <TextView
+            style="@style/MainText"
+            android:text="@string/catalog"
+            android:textColor="@color/mainText"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="9dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textpath"
+            android:textSize="16sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="10dp" />
+
+    </LinearLayout>
+
+    <View style="@style/Divider"/>
+
+    <LinearLayout
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="setSlideShow"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/MainText"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/set_start_slideshow"
+            android:textColor="@color/mainText"
+            android:id="@+id/setSlideshow"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp" />
+
+    </LinearLayout>
+
+    <View style="@style/Divider"/>
+
+</LinearLayout>

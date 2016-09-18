@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Image Slider</string>
+    <string name="end_of_show">Конец показа</string>
+    <string name="settings">Настройки</string>
+    <string name="start_of_show">Начало показа</string>
+    <string name="seconds">" сек"</string>
+    <string name="access_closed">Доступ к данной папке закрыт</string>
+    <string name="nothing_to_show">Дальше некуда</string>
+    <string name="sd_not_available">SD карта не доступна</string>
+    <string name="folder">Папка -</string>
+    <string name="no_available">не содержит графические файлы либо не доступна</string>
+    <string name="back">Назад</string>
+    <string name="choose_folder">Выбрать папку</string>
+    <string name="image_change_interval">Интервал смены картинки</string>
+    <string name="catalog">Каталог</string>
+    <string name="set_start_slideshow">Задать запуск слайдшоу</string>
+</resources>
